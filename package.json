@@ -13,7 +13,7 @@
     "build-min": "babel --minified tjb-auth-register.js --out-file docs/tjb-auth-register.min.js",
     "watch-max": "babel --watch tjb-auth-register.js --out-file docs/tjb-auth-register.js",
     "watch-min": "babel --watch --minified tjb-auth-register.js --out-file docs/tjb-auth-register.min.js",
-    "patch": "npm run build; git add .; git commit -m '$M'; git push; npm version patch; npm publish"
+    "patch": "npm run build; git commit -am \"$M\"; git push; npm version patch; npm publish"
   },
   "repository": {
     "type": "git",
