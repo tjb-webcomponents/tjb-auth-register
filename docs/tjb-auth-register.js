@@ -7,7 +7,7 @@ import "https://tjb-webcomponents.github.io/tjb-notify/tjb-notify.min.js";
 
 class tjbAuthRegister extends WebComponent() {
   // Styles
-  ////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////
 
   CSS() {
     return html`
