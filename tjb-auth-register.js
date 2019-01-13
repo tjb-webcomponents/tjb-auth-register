@@ -198,7 +198,7 @@ class tjbAuthRegister extends WebComponent() {
     );
 
     this.dispatchEvent("register", body);
-    if (!this.postbody) return false;
+    if (!this.posturl) return false;
 
     return fetch(this.posturl, {
       method: "POST",
