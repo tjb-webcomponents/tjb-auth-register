@@ -1,6 +1,6 @@
 {
   "name": "tjb-auth-register",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "awesome auth-register webcomponent",
   "main": "docs/tjb-auth-register.min.js",
   "directories": {
