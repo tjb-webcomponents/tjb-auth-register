@@ -71,6 +71,13 @@ All attributes:
 | postbody  | postbody="{ 'foo': 'bar' }"                          | JSON Object that will be added to the remote register POSt call.                        |
 | posturl   | posturl="https://jsonplaceholder.typicode.com/users" | `URL` that will be called with a `POST` call and credentials as `application/json` body |
 
+### Methods
+
+| method  | example    | description                        |
+| ------- | ---------- | ---------------------------------- |
+| error   | .error()   | Sets the widget in an error state  |
+| success | .success() | Sets the widget in a success state |
+
 ### Events
 
 | name     | event details                            | description                                                                                                       |

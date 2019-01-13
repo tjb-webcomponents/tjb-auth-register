@@ -218,12 +218,20 @@ class tjbAuthRegister extends WebComponent() {
   }
 
   _loginSuccess(resp) {
-    bounce(this.domNode).then(this.dispatchEvent.bind(this, "success", resp));
+    this.success().then(this.dispatchEvent.bind(this, "success", resp));
   }
 
   _loginError(resp) {
     this.dispatchEvent("error", resp);
-    this.errorHandler();
+    this.error();
+  }
+
+  success() {
+    return bounce(this.domNode);
+  }
+
+  error() {
+    return this.errorHandler();
   }
 
   checkValidity() {
