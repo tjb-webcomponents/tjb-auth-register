@@ -193,7 +193,8 @@ class tjbAuthRegister extends WebComponent() {
       password: this.passwordInput.value
     }, JSON.parse(postbody || "{}"));
 
-    console.log(body);
+    this.dispatchEvent("register", body);
+    if (!this.postbody) return false;
 
     return fetch(this.posturl, {
       method: "POST",

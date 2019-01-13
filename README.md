@@ -73,11 +73,12 @@ All attributes:
 
 ### Events
 
-| name     | details                                  | description                                                                                  |
-| -------- | ---------------------------------------- | -------------------------------------------------------------------------------------------- |
-| redirect | - href (@String) <br> - target (@string) | triggered when user clicks on links. For instance `register` link or `forgor` password link. |
-| success  | - resp (@Object)                         | when the register call returned a success message                                            |
-| error    | - resp (@Object)                         | when the register call returned an error message                                             |
+| name     | event details                            | description                                                                                                       |
+| -------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| redirect | - href (@String) <br> - target (@string) | triggered when user clicks on links. For instance `register` link or `forgor` password link.                      |
+| success  | - resp (@Object)                         | when the register call returned a success message                                                                 |
+| error    | - resp (@Object)                         | when the register call returned an error message                                                                  |
+| register | - body (@Object)                         | when the register button was clicked. The Event holds the `body` with information ready to be send to some server |
 
 You can listen to events like so: `tjbregister.addEventListener('register/success', (e) => { /* do stuff */ })`.
 
