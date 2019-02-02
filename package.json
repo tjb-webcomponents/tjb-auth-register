@@ -7,8 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "npm run watch-min | npm run watch-max | http-server",
-    "build": "npm run build-max | npm run build-min",
+    "start": "npm run watch-min & npm run watch-max & http-server",
+    "build": "npm run build-max & npm run build-min",
     "build-max": "babel tjb-auth-register.js --out-file docs/tjb-auth-register.js",
     "build-min": "babel --minified tjb-auth-register.js --out-file docs/tjb-auth-register.min.js",
     "watch-max": "babel --watch tjb-auth-register.js --out-file docs/tjb-auth-register.js",

@@ -272,7 +272,7 @@ class tjbAuthRegister extends WebComponent() {
           >
         </li>
         <li>
-          Don’t have an account yet?
+          Already have an account?
           <a
             onclick="${e => this.openHandler(e, "login")}"
             href="#login"
